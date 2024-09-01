@@ -96,9 +96,16 @@
             "scripts": []
           }
         },
+        // "deploy": {
+        //   "builder": "angular-cli-ghpages:deploy"
+        // }
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
-        }
+           "builder": "angular-cli-ghpages:deploy",
+           "options": {
+             "repo": "https://github.com/atifdotarif/Tech-Giants.git",
+             "silent": false
+          }
+}
       }
     }
   },
