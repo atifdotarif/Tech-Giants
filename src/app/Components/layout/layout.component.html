@@ -1,0 +1,22 @@
+<header>
+    <div class="logo">
+        Tech Giants
+    </div>
+    <div class="tabs">
+        <button class="btns" routerLink="/Home" routerLinkActive="active">Home</button>
+        <button class="btns" routerLink="/Services" routerLinkActive="active">Services</button>
+        <button class="btns" routerLink="/About" routerLinkActive="active">About</button>
+        <button class="btns" routerLink="/Contact" routerLinkActive="active">Contact</button>
+        <button class="btns" (click)="logout()"  routerLinkActive="active">Logout</button>
+    </div>
+</header>
+<div class="container">
+    <div class="sidebar-main" (mouseover)="mouseOver()" (mouseout)="mouseOut()"
+        [ngStyle]="{'width': isOpen  ? '20%' : '10%'}">
+        
+    </div>
+
+    <div class="layout" [ngStyle]="{'width': isOpen  ? '80%' : '90%'}" >
+        <router-outlet></router-outlet>
+    </div>
+</div>
