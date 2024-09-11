@@ -3,15 +3,15 @@
 </div> -->
 <div class="login-page">
  
-    <div class="form">
-      <div class="logo">
-        Tech Giants
-      </div>
-      <form class="login-form">
-        <input type="text"  [(ngModel)]="userObj.userName" name="email" placeholder="Email" required=""/>
-        <input type="password" [(ngModel)]="userObj.password" name="password"  placeholder="Password" required=""/>
-        <button (click)="Login()">login</button>
-        <p class="message">Not registered? <button routerLink="/signup">Create an account</button></p>
-      </form>
+  <div class="form">
+    <div class="logo">
+      Tech Giants
     </div>
+    <form class="login-form">
+      <input type="text"  [(ngModel)]="userObj.userName" name="email" placeholder="Email" required=""/>
+      <input type="password" [(ngModel)]="userObj.password" name="password"  placeholder="Password" required=""/>
+      <button (click)="Login()">login</button>
+      <p class="message">Not registered? <button routerLink="/signup">Create an account</button></p>
+    </form>
   </div>
+</div>
