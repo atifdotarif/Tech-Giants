@@ -8,8 +8,8 @@
       Tech Giants
     </div>
     <form class="login-form">
-      <input type="text"  [(ngModel)]="userObj.userName" name="email" placeholder="Email" required=""/>
-      <input type="password" [(ngModel)]="userObj.password" name="password"  placeholder="Password" required=""/>
+      <input type="text"  [(ngModel)]="userObj.userName" name="email" placeholder="Email try 'admin'" required=""/>
+      <input type="password" [(ngModel)]="userObj.password" name="password"  placeholder="Password '123'" required=""/>
       <button (click)="Login()">login</button>
       <p class="message">Not registered? <button routerLink="/signup">Create an account</button></p>
     </form>
